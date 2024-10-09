@@ -1,0 +1,128 @@
+/* General styles */
+body {
+  background-color: #f7f9fc; /* Light background for better contrast */
+  font-family: "Arial", sans-serif;
+  height: 100vh;
+  margin: 0;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mainHead {
+  margin-top: 20px;
+  font-size: 40px; /* Large font size */
+  color: #333; /* Darker color for better readability */
+  font-weight: bold; /* Make the font bold */
+  text-align: center; /* Center the heading */
+  margin-bottom: 20px; /* Add space below the heading */
+  letter-spacing: 2px; /* Add letter spacing for a cleaner look */
+  text-transform: uppercase; /* Make the text uppercase */
+  font-family: "Arial", sans-serif; /* Use a clean font */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+/* Card container */
+.card {
+  width: 450px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 15px;
+
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  text-align: center;
+}
+
+/* Input and button container */
+.inputBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.inputBox input {
+  padding: 10px;
+  width: 70%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-right: 10px;
+  outline: none;
+}
+
+.inputBox button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  height: 40px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.inputBox button:hover {
+  background-color: #0056b3;
+}
+
+.tasks {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tasks li {
+  padding: 10px 15px;
+  background-color: #f1f1f1;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.tasks li:hover {
+  background-color: #e9ecef;
+}
+
+/* Task buttons */
+.tasks li button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.tasks li .editBtn {
+  background-color: #ffc107;
+  color: white;
+}
+
+.tasks li .editBtn:hover {
+  background-color: #e0a800;
+}
+
+.tasks li .deleteBtn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.tasks li .delete-btn:hover {
+  background-color: #c82333;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 500px) {
+  .card {
+    width: 90%;
+  }
+
+  .inputBox input {
+    width: 60%;
+  }
+
+  .inputBox button {
+    padding: 10px;
+  }
+}
